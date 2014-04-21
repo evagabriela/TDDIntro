@@ -4,8 +4,6 @@ public class Factorial {
     public Integer compute(int i) throws IllegalArgumentException{
         if (i < 0) {
             throw new IllegalArgumentException();
-        } if (i == 1 || i == 0){
-            return 1;
         }
         int factorial_var = 1;
         for ( int num = 1; num <= i; num++){
