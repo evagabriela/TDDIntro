@@ -12,11 +12,13 @@ public class AccountTests {
         account.deposit(50);
         assertThat(account.balance, is(50));
     }
-//
-//    @Test
-//    public void shouldDecreaseMyBalanceWhenIWithdrawMoney(){
-//
-//    }
+
+    @Test
+    public void shouldDecreaseMyBalanceWhenIWithdrawMoney(){
+        Account account = new Account();
+        account.withdraw(10);
+        assertThat(account.balance, is(-10));
+    }
 //
 //    @Test
 //    public void shouldNotDecreaseMyBalanceWhenIWithdrawMoneyAndDoNotHaveEnoughToCoverTheWithdrawal(){
